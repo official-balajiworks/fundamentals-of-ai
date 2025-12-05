@@ -20,7 +20,6 @@ def alphabeta(node, alpha, beta, maximizing):
                 break
         return best
 
-    # MIN player
     else:
         best = math.inf
         for child in value:
@@ -47,7 +46,7 @@ tree = {
     "G": 0
 }
 
-print("=== Alpha-Beta Pruning Trace ===")
+print("=== Alpha-Beta Pruning Trace ===")   
 
 root_value = alphabeta("A", -math.inf, math.inf, True)
 print("\nMinimax value of A:", root_value)
